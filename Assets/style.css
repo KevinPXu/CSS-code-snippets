@@ -2,6 +2,7 @@
   --background-color: beige;
   --header-bg-color: #bbb8b2;
   --primary-text-color: navy;
+  --header-border-color: rgb(158, 210, 231);
 }
 
 * {
@@ -46,16 +47,34 @@ main {
 section h2 {
   border-style: solid;
   border-width: 1px;
-  border-color: green;
+  border-color: var(--header-border-color);
   text-align: center;
   border-radius: 5px;
+  width: 100%;
+  transition: background-color 2s, color 1s ease-in-out;
+}
+
+section h2:hover {
+  background-color: var(--primary-text-color);
+  color: var(--background-color);
 }
 
 section pre {
   white-space: pre-wrap;
 
-  background: linear-gradient(to bottom, pink, purple);
+  background: linear-gradient(
+    to bottom,
+    rgb(125, 130, 219),
+    rgb(106, 193, 236)
+  );
   border-radius: 5px;
+  user-select: all;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 992px) {
