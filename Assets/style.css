@@ -1,2 +1,17 @@
 :root {
+  --background-color: beige;
+  --header-bg-color: #bbb8b2;
+  --primary-text-color: navy;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  width: 100vw;
+  background-color: var(--header-bg-color);
+  height: 200px;
 }
